@@ -1,0 +1,75 @@
+body {
+  display: flex;
+  width: 1440px;
+  padding: 2rem;
+  background-color: hsl(233deg, 47%, 7%);
+  color: white;
+  font-size: 15px;
+}
+
+main {
+  width: 900px;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "one four" "two four" "three four";
+  background-color: hsl(244deg, 38%, 16%);
+  font-family: "Inter", sans-serif;
+}
+
+h1 {
+  grid-area: one;
+  padding: 2rem 3.5rem 0 3.5rem;
+  color: hsl(0deg, 0%, 100%);
+  font-weight: 700;
+}
+h1 span {
+  color: hsl(277deg, 64%, 61%);
+}
+
+.article {
+  grid-area: two;
+  padding: 0 3.5rem;
+  color: hsla(0deg, 0%, 100%, 0.75);
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.stats {
+  grid-area: three;
+  padding: 3.5rem 4rem 3.5rem 3.5rem;
+}
+
+.image {
+  grid-area: four;
+  background-image: url(/images/image-header-desktop.jpg);
+  background-size: cover;
+}
+
+.overlay {
+  grid-area: four;
+  background-color: hsl(283deg, 100%, 33%);
+  filter: saturate(110%);
+  opacity: 0.4;
+  z-index: 2;
+}
+
+.stats {
+  grid-area: three;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 22px;
+}
+.stats span {
+  color: hsla(0deg, 0%, 100%, 0.6);
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.attribution {
+  display: block;
+}
+
+/*# sourceMappingURL=styles.css.map */
